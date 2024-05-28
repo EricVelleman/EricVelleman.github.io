@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/base.css"/>
+    <title>MathML versie van de definitie van relatieve luminantie</title>
+  </head>
+  <body>
+    <h1>MathML versie van de definitie van relatieve luminantie</h1>
+    <p>Hieronder staat een MathML versie van de <a href="./#dfn-relative-luminance">WCAG 2.2 definitie van relatieve luminantie</a>. Raadpleeg <a href="https://www.w3.org/Math/Software/mathml_software_cat_browsers.html">MathML Software - Browsers</a> voor informatie over browsers en plug-ins die MathML ondersteunen en die u mogelijk nodig heeft om de informatie op deze pagina correct weer te geven.</p>
+    <dl>
+      <dt><dfn data-dfn-type="dfn" id="dfn-relative-luminance" tabindex="0">relatieve luminantie</dfn></dt>
+      <dd><p>de relatieve helderheid van elk punt in een kleurenruimte, genormaliseerd naar 0 voor het donkerste zwart en 1 voor het lichtste wit</p>
+        <div class="note" role="note" id="issue-container-generatedID-128"><div role="heading" class="note-title marker" id="h-note-128" aria-level="3"><span>Noot</span><!---0.410359%--></div><div class="">
+          <p>Voor de sRGB-kleurenruimte is de relatieve luminantie van een kleur gedefinieerd als <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle>
+                <mi>L</mi>
+                <mo>=</mo>
+                <mn>0.2126</mn>
+                <mo>×</mo>
+                <mi>R</mi>
+                <mo>+</mo>
+                <mn>0.7152</mn>
+                <mo>×</mo>
+                <mi>G</mi>
+                <mo>+</mo>
+                <mn>0.0722</mn>
+                <mo>×</mo>
+                <mi>B</mi>
+              </mstyle>
+            </math> waar <strong>R</strong>, <strong>G</strong> en <strong>B</strong> gedefinieerd zijn als: </p>
+        <ul>
+          <li>
+            <p>Als <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow>
+                      <mi>s</mi>
+                      <mi>R</mi>
+                      <mi>G</mi>
+                      <mi>B</mi>
+                    </mrow>
+                  </msub>
+                  <mo>≤</mo>
+                  <mn>0.04045</mn>
+                </mstyle>
+              </math> dan <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>R</mi>
+                  <mo>=</mo>
+                  <mfrac>
+                    <msub>
+                      <mi>R</mi>
+                      <mrow>
+                        <mi>s</mi>
+                        <mi>R</mi>
+                        <mi>G</mi>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                    <mn>12.92</mn>
+                  </mfrac>
+                </mstyle>
+              </math> anders <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>R</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>R</mi>
+                            <mrow>
+                              <mi>s</mi>
+                              <mi>R</mi>
+                              <mi>G</mi>
+                              <mi>B</mi>
+                            </mrow>
+                          </msub>
+                          <mo>+</mo>
+                          <mn>0.055</mn>
+                        </mrow>
+                        <mn>1.055</mn>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2.4</mn>
+                  </msup>
+                </mstyle>
+              </math>
+            </p>
+          </li>
+          <li>
+            <p>Als <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <msub>
+                    <mi>G</mi>
+                    <mrow>
+                      <mi>s</mi>
+                      <mi>R</mi>
+                      <mi>G</mi>
+                      <mi>B</mi>
+                    </mrow>
+                  </msub>
+                  <mo>≤</mo>
+                  <mn>0.04045</mn>
+                </mstyle>
+              </math> dan <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>G</mi>
+                  <mo>=</mo>
+                  <mfrac>
+                    <msub>
+                      <mi>G</mi>
+                      <mrow>
+                        <mi>s</mi>
+                        <mi>R</mi>
+                        <mi>G</mi>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                    <mn>12.92</mn>
+                  </mfrac>
+                </mstyle>
+              </math> anders <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>G</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>G</mi>
+                            <mrow>
+                              <mi>s</mi>
+                              <mi>R</mi>
+                              <mi>G</mi>
+                              <mi>B</mi>
+                            </mrow>
+                          </msub>
+                          <mo>+</mo>
+                          <mn>0.055</mn>
+                        </mrow>
+                        <mn>1.055</mn>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2.4</mn>
+                  </msup>
+                </mstyle>
+              </math>
+            </p>
+          </li>
+          <li>
+            <p>Als <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <msub>
+                    <mi>B</mi>
+                    <mrow>
+                      <mi>s</mi>
+                      <mi>R</mi>
+                      <mi>G</mi>
+                      <mi>B</mi>
+                    </mrow>
+                  </msub>
+                  <mo>≤</mo>
+                  <mn>0.04045</mn>
+                </mstyle>
+              </math> dan <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>B</mi>
+                  <mo>=</mo>
+                  <mfrac>
+                    <msub>
+                      <mi>B</mi>
+                      <mrow>
+                        <mi>s</mi>
+                        <mi>R</mi>
+                        <mi>G</mi>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                    <mn>12.92</mn>
+                  </mfrac>
+                </mstyle>
+              </math> anders <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle>
+                  <mi>B</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>B</mi>
+                            <mrow>
+                              <mi>s</mi>
+                              <mi>R</mi>
+                              <mi>G</mi>
+                              <mi>B</mi>
+                            </mrow>
+                          </msub>
+                          <mo>+</mo>
+                          <mn>0.055</mn>
+                        </mrow>
+                        <mn>1.055</mn>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2.4</mn>
+                  </msup>
+                </mstyle>
+              </math>
+            </p>
+          </li>
+        </ul><p>en <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle>
+              <msub>
+                <mi>R</mi>
+                <mrow>
+                  <mi>s</mi>
+                  <mi>R</mi>
+                  <mi>G</mi>
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>G</mi>
+                <mrow>
+                  <mi>s</mi>
+                  <mi>R</mi>
+                  <mi>G</mi>
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mrow>
+                <mspace width="1ex"/>
+                <mtext>en</mtext>
+                <mspace width="1ex"/>
+              </mrow>
+              <msub>
+                <mi>B</mi>
+                <mrow>
+                  <mi>s</mi>
+                  <mi>R</mi>
+                  <mi>G</mi>
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+            </mstyle>
+          </math> gedefinieerd zijn als:</p><ul>
+          <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle>
+                <msub>
+                  <mi>R</mi>
+                  <mrow>
+                    <mi>s</mi>
+                    <mi>R</mi>
+                    <mi>G</mi>
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow>
+                      <mn>8</mn>
+                      <mi>b</mi>
+                      <mi>i</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </msub>
+                  <mn>255</mn>
+                </mfrac>
+              </mstyle>
+            </math></li>
+          <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle>
+                <msub>
+                  <mi>G</mi>
+                  <mrow>
+                    <mi>s</mi>
+                    <mi>R</mi>
+                    <mi>G</mi>
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                  <msub>
+                    <mi>G</mi>
+                    <mrow>
+                      <mn>8</mn>
+                      <mi>b</mi>
+                      <mi>i</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </msub>
+                  <mn>255</mn>
+                </mfrac>
+              </mstyle>
+            </math></li>
+          <li><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle>
+                <msub>
+                  <mi>B</mi>
+                  <mrow>
+                    <mi>s</mi>
+                    <mi>R</mi>
+                    <mi>G</mi>
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                  <msub>
+                    <mi>B</mi>
+                    <mrow>
+                      <mn>8</mn>
+                      <mi>b</mi>
+                      <mi>i</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </msub>
+                  <mn>255</mn>
+                </mfrac>
+              </mstyle>
+            </math></li>
+        </ul><p>(Formule overgenomen uit [<cite><a class="bibref" data-link-type="biblio" href="./#bib-srgb" title="Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB">SRGB</a></cite>].) </p>
+        </div>
+        </div>
+        <div class="note" role="note" id="issue-container-generatedID-129"><div role="heading" class="note-title marker" id="h-note-129" aria-level="3"><span>Noot</span><!---0.410359%--></div><p class="">Voor mei 2021 was de waarde 0,04045 in de definitie anders (0,03928). Het werd eerder overgenomen uit een oudere versie van de specificatie en is nu bijgewerkt. Dit heeft geen praktisch effect op de berekeningen in de context van deze richtlijnen.
+        </p></div>
+        
+        <div class="note" role="note" id="issue-container-generatedID-130"><div role="heading" class="note-title marker" id="h-note-130" aria-level="3"><span>Noot</span><!---0.410359%--></div><p class="">Bijna alle systemen die tegenwoordig gebruikt worden om webcontent te bekijken werken met sRGB-codering. Tenzij bekend is dat een andere kleurenruimte gebruikt zal worden om de content te verwerken en te vertonen, moeten auteurs de sRGB-kleurenruimte gebruiken om kleuren te evalueren. Indien andere kleurenruimtes gebruikt worden, zie: <div lang="en"> <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a></div>.
+        </p></div>
+        
+        <div class="note" role="note" id="issue-container-generatedID-131"><div role="heading" class="note-title marker" id="h-note-131" aria-level="3"><span>Noot</span><!---0.410359%--></div><p class="">Als dithering plaatsvindt na aflevering, wordt de bronkleurwaarde gebruikt. Voor kleuren die geditherd worden bij de bron, moeten de gemiddelde waarden van de kleuren die geditherd worden gebruikt worden (gemiddelde R, gemiddelde G en gemiddelde B).
+        </p></div>
+        
+        <div class="note" role="note" id="issue-container-generatedID-132"><div role="heading" class="note-title marker" id="h-note-132" aria-level="3"><span>Noot</span><!---0.410359%--></div><p class="">Er zijn instrumenten beschikbaar die de berekeningen om contrast en flits te testen automatisch doen.
+        </p></div>
+      </dd>
+      <dt id="bib-srgb">[SRGB]</dt>
+      <dd><a href="https://webstore.iec.ch/publication/6169"><div lang="en"> <cite>Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB</cite></div></a>. IEC. URL: <a href="https://webstore.iec.ch/publication/6169">https://webstore.iec.ch/publication/6169</a></dd>
+    </dl>
+  </body>
+</html>
